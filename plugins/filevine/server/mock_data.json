@@ -1,0 +1,216 @@
+{
+  "_comment": "Fictional sample data for FILEVINE_MOCK=1. No real clients or cases.",
+  "projects": [
+    {
+      "projectId": {"native": 10001, "partner": null},
+      "projectName": "Rivera, Ana v. Summit Freight LLC",
+      "clientName": "Ana Rivera",
+      "number": "BAM-24-0101",
+      "phaseName": "Treating",
+      "projectTypeId": {"native": 501, "partner": null},
+      "projectTypeCode": "PI",
+      "incidentDate": "2024-03-14T00:00:00Z",
+      "createdDate": "2024-03-20T16:02:00Z",
+      "isArchived": false
+    },
+    {
+      "projectId": {"native": 10002, "partner": null},
+      "projectName": "Okafor, Daniel v. Boise City",
+      "clientName": "Daniel Okafor",
+      "number": "BAM-25-0233",
+      "phaseName": "Investigation",
+      "projectTypeId": {"native": 501, "partner": null},
+      "projectTypeCode": "PI",
+      "incidentDate": "2026-05-02T00:00:00Z",
+      "createdDate": "2026-05-10T18:30:00Z",
+      "isArchived": false
+    },
+    {
+      "projectId": {"native": 10003, "partner": null},
+      "projectName": "Tanaka, Mei (minor) v. Lopez",
+      "clientName": "Mei Tanaka",
+      "number": "BAM-23-0877",
+      "phaseName": "Litigation",
+      "projectTypeId": {"native": 501, "partner": null},
+      "projectTypeCode": "PI",
+      "incidentDate": "2023-07-04T00:00:00Z",
+      "createdDate": "2023-07-12T15:00:00Z",
+      "isArchived": false
+    }
+  ],
+  "forms": {
+    "10001": {
+      "intake": {
+        "incidentState": "UT",
+        "incidentType": "Motor Vehicle - Rear End",
+        "liabilityNotes": "Commercial box truck rear-ended client at a red light on State St. Police report cites defendant driver for following too closely.",
+        "clientDob": "1988-09-02",
+        "governmentalEntity": false,
+        "policeReportNo": "SLCPD-24-118822"
+      },
+      "insurance": {
+        "defendantCarrier": "Granite Mutual",
+        "defendantPolicyLimits": "1,000,000 CSL",
+        "clientPipCarrier": "Beehive Auto",
+        "clientPipLimit": "3,000",
+        "clientUimLimits": "100,000/300,000",
+        "adjusterName": "J. Hollis",
+        "claimNumber": "GM-7781-22"
+      },
+      "litigation": {
+        "court": "",
+        "caseNumber": "",
+        "judge": "",
+        "complaintFiledDate": "",
+        "solDate": ""
+      }
+    },
+    "10002": {
+      "intake": {
+        "incidentState": "ID",
+        "incidentType": "Trip and Fall - Municipal Sidewalk",
+        "liabilityNotes": "Client tripped on a 3-inch heaved sidewalk panel reported to the city twice in 2025.",
+        "clientDob": "1971-01-19",
+        "governmentalEntity": true,
+        "policeReportNo": ""
+      },
+      "insurance": {
+        "defendantCarrier": "ICRMP",
+        "defendantPolicyLimits": "Idaho Tort Claims Act cap",
+        "clientPipCarrier": "",
+        "clientPipLimit": "",
+        "clientUimLimits": "",
+        "adjusterName": "",
+        "claimNumber": ""
+      },
+      "litigation": {
+        "court": "",
+        "caseNumber": "",
+        "judge": "",
+        "complaintFiledDate": "",
+        "solDate": ""
+      }
+    },
+    "10003": {
+      "intake": {
+        "incidentState": "UT",
+        "incidentType": "Dog Bite",
+        "liabilityNotes": "Neighbor's dog bit minor client at a 4th of July party. Strict liability under owner statute.",
+        "clientDob": "2014-11-30",
+        "governmentalEntity": false,
+        "policeReportNo": "WVC-23-4410"
+      },
+      "insurance": {
+        "defendantCarrier": "Wasatch Home & Auto",
+        "defendantPolicyLimits": "300,000",
+        "clientPipCarrier": "",
+        "clientPipLimit": "",
+        "clientUimLimits": "",
+        "adjusterName": "R. Pratt",
+        "claimNumber": "WHA-HO-55120"
+      },
+      "litigation": {
+        "court": "Third Judicial District Court, Salt Lake County",
+        "caseNumber": "250904412",
+        "judge": "Hon. M. Sorensen",
+        "complaintFiledDate": "2025-02-11",
+        "solDate": ""
+      }
+    }
+  },
+  "collections": {
+    "10001": {
+      "meds": [
+        {"itemId": {"native": 1}, "dataObject": {"provider": "Intermountain ER", "firstVisit": "2024-03-14", "lastVisit": "2024-03-14", "billed": 6840.00, "paid": 3000.00, "status": "Records + Bills Received"}},
+        {"itemId": {"native": 2}, "dataObject": {"provider": "Wasatch Chiropractic", "firstVisit": "2024-03-21", "lastVisit": "2024-08-30", "billed": 9120.00, "paid": 0, "status": "Bills Received, Records Requested"}},
+        {"itemId": {"native": 3}, "dataObject": {"provider": "Summit Orthopedics (MRI + injections)", "firstVisit": "2024-06-02", "lastVisit": "", "billed": 14275.50, "paid": 0, "status": "Treating"}}
+      ]
+    },
+    "10002": {"meds": [
+      {"itemId": {"native": 4}, "dataObject": {"provider": "St. Luke's Boise ER", "firstVisit": "2026-05-02", "lastVisit": "2026-05-02", "billed": 4210.00, "paid": 0, "status": "Requested"}}
+    ]},
+    "10003": {"meds": [
+      {"itemId": {"native": 5}, "dataObject": {"provider": "Primary Children's Hospital", "firstVisit": "2023-07-04", "lastVisit": "2023-07-04", "billed": 11980.00, "paid": 11980.00, "status": "Records + Bills Received"}},
+      {"itemId": {"native": 6}, "dataObject": {"provider": "Pediatric Plastic Surgery Assoc.", "firstVisit": "2023-08-15", "lastVisit": "2024-04-10", "billed": 22400.00, "paid": 18000.00, "status": "Records + Bills Received"}}
+    ]}
+  },
+  "notes": {
+    "10001": [
+      {"noteId": {"native": 900}, "createdAt": "2026-09-28T17:10:00Z", "author": "Case Manager", "body": "Client reports continued low back pain, ortho recommends RF ablation. Ask client re: lost wages from second job."},
+      {"noteId": {"native": 901}, "createdAt": "2026-08-12T15:00:00Z", "author": "Paralegal", "body": "Sent LOR to Granite Mutual. Adjuster J. Hollis acknowledged; requested medical authorization (declined, will provide records at demand)."}
+    ],
+    "10002": [
+      {"noteId": {"native": 902}, "createdAt": "2026-05-12T19:00:00Z", "author": "Intake", "body": "Signed. Gov entity defendant - calendar ITCA notice of claim."}
+    ],
+    "10003": [
+      {"noteId": {"native": 903}, "createdAt": "2026-09-01T16:00:00Z", "author": "Attorney", "body": "Mediation set 2026-11-18. Need updated scar revision estimate from plastics."}
+    ]
+  },
+  "contacts": {
+    "10001": [
+      {"personId": {"native": 70}, "fullName": "Ana Rivera", "role": "Client", "phone": "(801) 555-0142"},
+      {"personId": {"native": 71}, "fullName": "J. Hollis", "role": "Adjuster - Granite Mutual", "phone": "(800) 555-0199"}
+    ],
+    "10002": [
+      {"personId": {"native": 72}, "fullName": "Daniel Okafor", "role": "Client", "phone": "(208) 555-0110"}
+    ],
+    "10003": [
+      {"personId": {"native": 73}, "fullName": "Hiro Tanaka", "role": "Guardian ad litem / Parent", "phone": "(801) 555-0177"},
+      {"personId": {"native": 74}, "fullName": "Mei Tanaka", "role": "Client (minor)", "phone": ""}
+    ]
+  },
+  "deadlines": {
+    "10001": [],
+    "10002": [],
+    "10003": [
+      {"deadlineId": {"native": 40}, "name": "Mediation", "dueDate": "2026-11-18", "done": false},
+      {"deadlineId": {"native": 41}, "name": "Fact discovery cutoff", "dueDate": "2027-01-15", "done": false}
+    ]
+  },
+  "documents": {
+    "10001": [
+      {"documentId": {"native": 3000}, "filename": "Police Report SLCPD-24-118822.pdf", "uploadDate": "2024-03-28"},
+      {"documentId": {"native": 3001}, "filename": "Intermountain ER Records.pdf", "uploadDate": "2024-05-02"}
+    ],
+    "10002": [],
+    "10003": [
+      {"documentId": {"native": 3002}, "filename": "Complaint - Filed.pdf", "uploadDate": "2025-02-11"}
+    ]
+  },
+  "sections": {
+    "501": [
+      {"sectionSelector": "intake", "name": "Intake", "isCollection": false, "fields": [
+        {"fieldSelector": "incidentState", "name": "Incident State", "fieldType": "Dropdown"},
+        {"fieldSelector": "incidentType", "name": "Incident Type", "fieldType": "Dropdown"},
+        {"fieldSelector": "liabilityNotes", "name": "Liability Notes", "fieldType": "TextLarge"},
+        {"fieldSelector": "clientDob", "name": "Client DOB", "fieldType": "Date"},
+        {"fieldSelector": "governmentalEntity", "name": "Governmental Entity?", "fieldType": "Boolean"},
+        {"fieldSelector": "policeReportNo", "name": "Police Report #", "fieldType": "String"}
+      ]},
+      {"sectionSelector": "insurance", "name": "Insurance", "isCollection": false, "fields": [
+        {"fieldSelector": "defendantCarrier", "name": "Defendant Carrier", "fieldType": "String"},
+        {"fieldSelector": "defendantPolicyLimits", "name": "Defendant Policy Limits", "fieldType": "String"},
+        {"fieldSelector": "clientPipCarrier", "name": "Client PIP Carrier", "fieldType": "String"},
+        {"fieldSelector": "clientPipLimit", "name": "Client PIP Limit", "fieldType": "Currency"},
+        {"fieldSelector": "clientUimLimits", "name": "Client UIM Limits", "fieldType": "String"},
+        {"fieldSelector": "adjusterName", "name": "Adjuster", "fieldType": "String"},
+        {"fieldSelector": "claimNumber", "name": "Claim #", "fieldType": "String"}
+      ]},
+      {"sectionSelector": "litigation", "name": "Litigation", "isCollection": false, "fields": [
+        {"fieldSelector": "court", "name": "Court", "fieldType": "String"},
+        {"fieldSelector": "caseNumber", "name": "Case Number", "fieldType": "String"},
+        {"fieldSelector": "judge", "name": "Judge", "fieldType": "String"},
+        {"fieldSelector": "complaintFiledDate", "name": "Complaint Filed", "fieldType": "Date"},
+        {"fieldSelector": "solDate", "name": "SOL Date", "fieldType": "Date"}
+      ]},
+      {"sectionSelector": "meds", "name": "Medical Providers", "isCollection": true, "fields": [
+        {"fieldSelector": "provider", "name": "Provider", "fieldType": "String"},
+        {"fieldSelector": "firstVisit", "name": "First Visit", "fieldType": "Date"},
+        {"fieldSelector": "lastVisit", "name": "Last Visit", "fieldType": "Date"},
+        {"fieldSelector": "billed", "name": "Billed", "fieldType": "Currency"},
+        {"fieldSelector": "paid", "name": "Paid", "fieldType": "Currency"},
+        {"fieldSelector": "status", "name": "Records Status", "fieldType": "Dropdown"}
+      ]}
+    ]
+  }
+}

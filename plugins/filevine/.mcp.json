@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "filevine": {
+      "command": "python3",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/server/filevine_mcp.py"],
+      "env": {
+        "FILEVINE_PAT": "${FILEVINE_PAT:-}",
+        "FILEVINE_CLIENT_ID": "${FILEVINE_CLIENT_ID:-}",
+        "FILEVINE_CLIENT_SECRET": "${FILEVINE_CLIENT_SECRET:-}",
+        "FILEVINE_USER_ID": "${FILEVINE_USER_ID:-}",
+        "FILEVINE_ORG_ID": "${FILEVINE_ORG_ID:-}",
+        "FILEVINE_API_BASE": "${FILEVINE_API_BASE:-https://api.filevineapp.com/fv-app/v2}",
+        "FILEVINE_MOCK": "${FILEVINE_MOCK:-0}",
+        "FILEVINE_ALLOW_WRITES": "${FILEVINE_ALLOW_WRITES:-0}"
+      }
+    }
+  }
+}

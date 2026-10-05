@@ -1,0 +1,8 @@
+{
+  "name": "filevine",
+  "description": "Filevine for plaintiff PI practice: case snapshots, specials totals, SOL/notice-of-claim audits (UT, ID, AZ), Liquid template drafting and linting, and confirmed note/field write-back via the Filevine v2 API.",
+  "version": "0.1.0",
+  "author": { "name": "BAM Personal Injury Lawyers" },
+  "license": "MIT",
+  "keywords": ["filevine", "legal", "personal-injury", "case-management", "liquid", "statute-of-limitations"]
+}

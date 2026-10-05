@@ -30,6 +30,22 @@
       ],
       "category": "design",
       "strict": false
+    },
+    {
+      "name": "filevine",
+      "source": "./plugins/filevine",
+      "description": "Filevine for plaintiff PI practice: case briefs, specials, SOL/notice-of-claim audits (UT/ID/AZ), Liquid template drafting + linting, confirmed write-back.",
+      "version": "0.1.0",
+      "author": {
+        "name": "BAM Personal Injury Lawyers"
+      },
+      "keywords": [
+        "filevine",
+        "legal",
+        "personal-injury",
+        "case-management"
+      ],
+      "category": "productivity"
     }
   ]
 }
