@@ -161,6 +161,13 @@ def write_feeds():
             for r in rows:
                 w.writerow({k: flat(v) for k, v in r.items()})
 
+    # Tab-separated .txt (header row + one product per row).
+    with open(FEED_DIR / "bam-products.txt", "w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=fields, delimiter="\t", quoting=csv.QUOTE_MINIMAL, lineterminator="\n")
+        w.writeheader()
+        for r in rows:
+            w.writerow({k: flat(v) for k, v in r.items()})
+
     import pyarrow as pa
     import pyarrow.parquet as pq
     pq.write_table(pa.Table.from_pylist(rows), FEED_DIR / "bam-products.parquet", compression="zstd")
