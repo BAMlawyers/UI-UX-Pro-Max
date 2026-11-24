@@ -109,9 +109,9 @@ FEED_DIR = HERE / "feed"
 
 
 def product_url(p):
-    # Distinct URL per product; the query string is ignored by the server and
-    # the fragment scrolls to the product on the page.
-    return f"{PAGE_URL}?service={p['slug']}#{p['slug']}"
+    # Each product links to the existing contact form. The query string keeps
+    # the URLs distinct per product and is ignored by the server.
+    return f"{CONTACT_URL}?service={p['slug']}"
 
 
 # --- Feed ---------------------------------------------------------------------
